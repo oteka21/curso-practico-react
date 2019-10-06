@@ -1,3 +1,3 @@
 import React from 'react'
-
-export const Helloworld = () => <h1>Hola mundito loco</h1>
+import '../assets/styles/App.scss'
+export const Helloworld = () => <h1>Hola mundo</h1>
