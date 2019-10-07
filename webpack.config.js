@@ -44,6 +44,17 @@ module.exports = {
                     'sass-loader'
                 ]
 
+            },{
+                test: /\.jpe?g|png|gif$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'assets/[hash].[ext]'
+                        }
+                    }
+                ]
+
             }
         ]
     },

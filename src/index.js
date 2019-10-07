@@ -1,5 +1,5 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Helloworld } from './components/Helloworld'
+import { App } from './containers/App'
 
-render(<Helloworld /> , document.querySelector('#app'))
+render(<App /> , document.querySelector('#app'))

@@ -1,0 +1,19 @@
+.carousel{
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+
+.carousel__container{
+    white-space: nowrap;
+    margin: 60px 0px;
+    padding-bottom: 10px; 
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel__title{
+    color: #fff;
+}
