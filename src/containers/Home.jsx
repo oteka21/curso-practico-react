@@ -1,16 +1,14 @@
 import React, { useState, useEffect, Fragment } from 'react'
-import { Header } from '../components/Header'
 import { Search } from '../components/Search'
 import { Carousel } from '../components/Carousel'
 import { CarouselItem } from '../components/CarouselItem'
-import { Footer } from '../components/Footer'
 
 //hooks
 import { useInitialState } from '../hooks/useInitialState'
 
 import '../assets/styles/App.scss'
 
-export const App = () => {
+export const Home = () => {
     const videos = useInitialState()
     //function to render each video
     function renderItem(item){
@@ -20,7 +18,6 @@ export const App = () => {
     }
 
     return <Fragment>
-        <Header />
         <Search />
         {
             videos.map((item, key) => (
@@ -32,6 +29,5 @@ export const App = () => {
                 </Carousel>
             ))
         }
-        <Footer />
     </Fragment>
 }

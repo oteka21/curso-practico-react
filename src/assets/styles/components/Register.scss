@@ -1,0 +1,95 @@
+
+.register{
+    background: linear-gradient(#21c08b, #ab88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh -200px)
+}
+
+.register__container {
+    background: rgba(255,255,255, .1);
+    border-radius: 40px;
+    border: 2px solid #fff;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.register__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.register__container--form label{
+    font-size: 14px;
+}
+
+.register__container--remember-me{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.register__container--remember-me a{
+    color:white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.register__container--remember-me a:hover{
+    text-decoration: underline;
+}
+
+.register__container-input{
+    background: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid #fff;
+    font-family: "Muli";
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 14px;
+    caret-color: #fff;
+    color: #fff;
+}
+
+.register__container-input::placeholder{
+    color:#fff;
+}
+
+.register__container-button{
+    background: rgba(255,255,255,0.3);
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Muli";
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    height: 50px;
+    letter-spacing: 1.5px;
+    outline: none;
+
+}
+.register__container a{
+    align-self: center;
+}
+
+@media only screen and (max-width: 600px){
+    .register__container{
+        background: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+}
