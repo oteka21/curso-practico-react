@@ -2,6 +2,7 @@ import React from 'react'
 import '../assets/styles/components/Header.scss'
 import logo from '../assets/images/logo-platzi.png'
 import { Link } from 'react-router-dom'
+
 export const Header = () => (
     <header className="header">
     <Link to='/'>

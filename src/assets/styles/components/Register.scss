@@ -63,6 +63,10 @@
     color: #fff;
 }
 
+.register__container-input[data-error="true"]{
+    border-bottom: 2px solid red;
+}
+
 .register__container-input::placeholder{
     color:#fff;
 }
