@@ -6,6 +6,7 @@ import deleteIcon from '../assets/images/delete.png'
 import { connect } from 'react-redux'
 import { setFavorite } from '../Actions'
 import { deleteFavorite } from '../Actions'
+import { Link } from 'react-router-dom' 
 import '../assets/styles/components/CarouselItem.scss'
 
 const mapDispatchToProps = {
@@ -26,7 +27,9 @@ export const CarouselItem = connect(null, mapDispatchToProps)(({id, slug, title,
         <img className='carousel-item__img'src={cover} alt="globe" />
         <div className="carousel-item__details">
             <div>
+            <Link to={`/player/${id}`}>
                 <img className="carousel-item__details--icon" src={playIcon} />
+            </Link>
                 {
                     isList 
                     ? <img className="carousel-item__details--icon" src={deleteIcon} onClick={() => handleDeleteFavorite(id)}/>

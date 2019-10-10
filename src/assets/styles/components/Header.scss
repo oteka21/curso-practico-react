@@ -30,9 +30,11 @@
     width: 35px;
     margin-right: 5px;
 }
-.header__menu--profile p{
+.header__menu--profile p,a{
     color: #fff;
-    font-family: "Releway";
+    font-family: "Muli";
+    text-decoration: none;
+
 }
 
 .header__menu div ul{
@@ -58,4 +60,10 @@
 
 .header__menu div li a:hover{
     text-decoration: underline;
+}
+
+.header__menu-avatar{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
 }
