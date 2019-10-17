@@ -1,11 +1,8 @@
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Search } from '../components/Search'
 import { Carousel } from '../components/Carousel'
 import { CarouselItem } from '../components/CarouselItem'
 import { connect } from 'react-redux'
-
-//hooks
-// import { useInitialState } from '../hooks/useInitialState'
 
 import '../assets/styles/App.scss'
 
@@ -17,8 +14,6 @@ function mapStateToProps(state){
 }
 
 export const Home = connect(mapStateToProps)(({ category= [], myList = [] }) => {
-
-    const varTostring = myVar => Object.keys(myVar)[0]
 
     function renderItem(item, isList = false){
         return item.map((video, key) => (
@@ -46,7 +41,3 @@ export const Home = connect(mapStateToProps)(({ category= [], myList = [] }) => 
         }
     </Fragment>
 })
-
-
-
-// export const Header = connect(mapStateToProps)(HComponent)
